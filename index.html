@@ -2,11 +2,135 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Сайт города Седона</title>
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+    <!-- Шапка сайта -->
+    <header class="page-header">
+      <span class="page-header__logo">
+          <img src="logo.jpg" alt="Лого сайта Седона">
+      </span>
+      <div class="page-header__top-icon"></div>      
+      <nav class="page-header__nav page-nav">
+        <ul class="page-nav__list">
+          <li class="page-nav__item">
+            <a class="page-nav__link" href="info.html">Информация</a>
+          </li>
+          <li class="page-nav__item">
+              <a class="page-nav__link" href="media.html">Фото и видео</a>
+          </li>
+          <li class="page-nav__item">
+              <a class="page-nav__link" href="maps.html">Карта штата</a>
+          </li>
+          <li class="page-nav__item">
+              <a class="page-nav__link" href="hotels.html">Гостиницы</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    
+    <!-- Главное содержимое страницы -->
+    <main class="page-main">
 
+      <h1 class="page-main__title">Седона — небольшой городок в Аризоне,
+          заслуживающий большего!
+      </h1>
+
+      <!-- Раздел преимуществ -->
+      <section class="features">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <p class="features__title">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <ul class="features__list">
+          <li class="features__item item-features item-image">
+            <h3 class="item-features__title">Настоящий городок</h3>
+            <p class="item-features__item-number">№1</p>
+            <p class="item-features__description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+
+            <!-- Здесь мне нужен твой совет, не могу понять как имена классов нужно задавать во вложенном списке используя БЭМ -->
+            <ul class="">
+                <li class="">
+                  <h4 class="">Жильё</h4>
+                  <p class="">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                </li>
+                <li class="">
+                    <h4 class="">Еда</h4>
+                    <p class="">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                </li>
+                <li class="">
+                    <h4 class="">Сувениры</h4>
+                    <p class="">Не только китайского, но и местного производства!</p>
+                </li>
+            </ul>
+          </li>
+          <li class="features__item item-features item-image">
+              <h3 class="item-features__title">Там есть Мост дьявола</h3>
+              <p class="item-features__item-number">№2</p>
+              <p class="item-features__description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>            
+          </li>
+          <li class="features__item">
+              <h3 class="item-features__title">Небольшая площадь</h3>
+              <p class="item-features__item-number">№3</p>
+              <p class="item-features__description">Все достопримечательности находятся очень близко</p> 
+          </li>
+          <li class="features__item">
+              <h3 class="item-features__title">Красивая дорога</h3>
+              <p class="item-features__item-number">№2</p>
+              <p class="item-features__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p> 
+          </li>
+          <li class="features__item">
+              <h3 class="item-features__title">Мало туристов</h3>
+              <p class="item-features__item-number">№2</p>
+              <p class="item-features__description">Большинство едет в гранд каньон и толпится там</p> 
+          </li>
+        </ul>
+      </section>
+
+      <!-- Раздел по поиску отеля -->
+      <section class="hotel-search">
+        <h2 class="hotel-search__title visually-hidden">Поиск гостиницы</h2>
+        <p class="hotel-search__question">Заинтересовались?</p>
+        <p class="hotel-search__content">
+          Укажите предполагаемые даты поездки, 
+          и мы покажем вам лучшие предложения гостиниц в седоне
+        </p>
+      </section>
+
+      <!-- Раздел с картой -->
+      <section class="map">
+        <h2 class="map__title visually-hidden">Карта</h2>
+        <a href="#" class="map__link">
+          <img class="map__image" src="#" alt="Карта">
+        </a>
+      </section>
+
+      <!-- Раздел с формой поиска -->
+      <section class="modal">
+        <h2 class="modal__title">Поиск гостиницы в Седоне</h2>
+        <form class="modal__form"></form>
+      </section>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer class="page-footer">
+      <span class="page-footer__hashtag">#visitsedona</span>
+      <ul class="page-footer__socials-list">
+        <li class="page-footer__socials-item">
+          <a href="#" class="page-footer__socials-link page-footer__socials-link-twitter">Наша группа в Twitter</a>
+        </li>
+        <li class="page-footer__socials-item">
+            <a href="#" class="page-footer__socials-link page-footer__socials-link-facebook">Наша группа в Facebook</a>
+        </li>
+        <li class="page-footer__socials-item">
+            <a href="#" class="page-footer__socials-link page-footer__socials-link-youtube">Наша группа в Youtube</a>
+        </li>
+      </ul>
+      <p class="page-footer__developer-name">Website by</p>
+      <span class="page-footer__logo">
+        <a class="page-footer__developer-link" href="https://htmlacademy.ru/" >
+          <img class="page-footer__developer-image" src="#" alt="htmlacademy.ru">
+        </a>
+      </span>
+    </footer>
   </body>
 </html>

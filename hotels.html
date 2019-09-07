@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Сайт города Седона</title>
+  </head>
+  <body>
+
+    <!-- Шапка сайта -->
+    <header class="page-header">
+        <a href="index.html" class="page-header__logo">
+            <img src="logo.jpg" alt="Лого сайта Седона">
+        </a>      
+        <nav class="page-header__nav page-nav">
+          <ul class="page-nav__list">
+            <li class="page-nav__item">
+              <a class="page-nav__link" href="info.html">Информация</a>
+            </li>
+            <li class="page-nav__item">
+                <a class="page-nav__link" href="media.html">Фото и видео</a>
+            </li>
+            <li class="page-nav__item">
+                <a class="page-nav__link" href="maps.html">Карта штата</a>
+            </li>
+            <li class="page-nav__item">
+                <a class="page-nav__link" href="hotels.html">Гостиницы</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Главное содержимое страницы -->
+      <main class="page-main">
+        <h1 class="visually-hidden">Поиск гостиницы</h1>
+
+        <!-- Раздел с формой поиска отеля -->
+        <section class="hotel-search">
+          <h2 class="visually-hidden">Форма поиска гостиницы</h2>
+            <form  class="hotel-search__form">
+          
+            </form>
+        </section>
+        
+        <!-- Раздел сортировки результатов поиска-->
+        <section class="sorting">
+          <h2 class="visually-hidden">Сортировка</h2>
+          <p class="sorting__title">Найдено: 3</p>
+          <p class="sorting__text">Сортировать</p>
+          <ul class="sorting__list">
+            <li class="sorting__item">
+              <a class="sorting__item_link sorting__item_current" href="#">По цене</a>
+            </li>
+            <li class="sorting__item">
+              <a class="sorting__item_link" href="#">По типу</a>
+            </li>
+            <li class="sorting__item">
+              <a class="sorting__item_link" href="#">По рейтингу</a>
+            </li>
+            <li class="sorting__item-dir">
+              <a class="sorting__dir-link sorting__dir-link-up" href="#">По возрастанию</a>
+              <a class="sorting__dir-link sorting__dir-link-down dir-link-current" href="#">По убыванию</a>
+            </li>            
+          </ul>
+        </section>
+
+        <!-- Раздел с результатами сортировки -->
+        <section class="catalog">  
+          <h2 class="visually-hidden">Каталог</h2>                     
+          <ul class="catalog__list">
+            <li class="catalog__item">
+              <img class="catalog__image" src="" alt="Amara Resort & Spa">
+              <p class="catalog__title">Amara Resort & Spa</p>
+              <p class="catalog__type-hotel">Гостиница</p>
+              <p class="catalog__cost">От 4000 Р.</p>
+              <a class="catalog__more-details" href="#">Подробнее</a>
+              <a class="catalog__booking" href="#">Забронировать</a>
+              <div class="catalog__raiting-stars">
+                <span>Четыре звезды</span>
+              </div>
+              <div class="catalog__raiting-numbers">
+                <p class="catalog__rating-text">Рейтинг: 8,5</p>
+              </div>
+            </li>
+            <li class="catalog__item">
+                <img class="catalog__image" src="" alt="Desert Quail Inn">
+                <p class="catalog__title">Desert Quail Inn</p>
+                <p class="catalog__type-hotel">Мотель</p>
+                <p class="catalog__cost">От 3000 Р.</p>
+                <a class="catalog__more-details" href="#">Подробнее</a>
+                <a class="catalog__booking" href="#">Забронировать</a>
+                <div class="catalog__raiting-stars">
+                  <span>Три звезды</span>
+                </div>
+                <div class="catalog__raiting-numbers">
+                  <p class="catalog__rating-text">Рейтинг: 8,9</p>
+                </div>
+            </li>
+            <li class="catalog__item">
+                <img class="catalog__image" src="" alt="Villas at Poco Diablo">
+                <p class="catalog__title">Villas at Poco Diablo</p>
+                <p class="catalog__type-hotel">Апартаменты</p>
+                <p class="catalog__cost">От 2000 Р.</p>
+                <a class="catalog__more-details" href="#">Подробнее</a>
+                <a class="catalog__booking" href="#">Забронировать</a>
+                <div class="catalog__raiting-stars">
+                  <span>Две звезды</span>
+                </div>
+                <div class="catalog__raiting-numbers">
+                  <p class="catalog__rating-text">Рейтинг: 9,2</p>
+                </div>
+            </li>
+          </ul>
+        </section>
+      </main>
+
+      <!-- Подвал сайта -->
+    <footer class="page-footer">
+        <span class="page-footer__hashtag">#visitsedona</span>
+        <ul class="page-footer__socials-list">
+          <li class="page-footer__socials-item">
+            <a href="#" class="page-footer__socials-link page-footer__socials-link-twitter">Наша группа в Twitter</a>
+          </li>
+          <li class="page-footer__socials-item">
+              <a href="#" class="page-footer__socials-link page-footer__socials-link-facebook">Наша группа в Facebook</a>
+          </li>
+          <li class="page-footer__socials-item">
+              <a href="#" class="page-footer__socials-link page-footer__socials-link-youtube">Наша группа в Youtube</a>
+          </li>
+        </ul>
+        <p class="page-footer__developer-name">Website by</p>
+        <span class="page-footer__logo">
+          <a class="page-footer__developer-link" href="https://htmlacademy.ru/" >
+            <img class="page-footer__developer-image" src="#" alt="htmlacademy.ru">
+          </a>
+        </span>
+      </footer>
+  </body>
+</html>    
