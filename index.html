@@ -83,14 +83,38 @@
 
       <!-- Раздел по поиску отеля -->
       <section class="hotel-search">
-        <h2 class="visually-hidden">поиск гостиницы в седоне</h2>
+        <h2 class="visually-hidden">Поиск гостиницы в седоне</h2>
         <p class="hotel-search__question">Заинтересовались?</p>
         <p class="hotel-search__description">
           Укажите предполагаемые даты поездки,
           и мы покажем вам лучшие предложения гостиниц в седоне
         </p>
-        <button type="button">Поиск гостиницы в Седоне</button>
-        <form class="hotel-search__popup-form"></form>
+        <button class="hotel-search__button-popup" type="button">Поиск гостиницы в Седоне</button>
+        <form class="hotel-search__popup-form" action="https://echo.htmlacademy.ru" method="post">
+          <label class="hotel-search__field">
+            <span class="hotel-search__field-name">Дата заезда</span>
+            <input class="hotel-search__input" type="text" name="arrival-date" value="" placeholder="24 апреля 2017">
+            <span class="hotel-search__icon-date"></span>
+          </label>
+          <label class="hotel-search__field">
+            <span class="hotel-search__field-name">Дата выезда</span>
+            <input class="hotel-search__input" type="text" name="departure-date" value="" placeholder="4 июля 2017">
+            <span class="hotel-search__icon-date"></span>
+          </label>
+          <label class="hotel-search__field">
+            <span class="hotel-search__field-name">Взрослые</span>
+            <span class="hotel-search__icon-plus"></span>
+            <input class="hotel-search__input" type="text" name="adults" value="" placeholder="2">
+            <span class="hotel-search__icon-minus"></span>
+          </label>
+          <label class="hotel-search__field">
+              <span class="hotel-search__field-name">Дети</span>
+              <span class="hotel-search__icon-plus"></span>
+              <input class="hotel-search__input" type="text" name="children" value="" placeholder="0">
+              <span class="hotel-search__icon-minus"></span>
+          </label>
+          <button class="hotel-search__button-search" type="submit">Найти</button>
+        </form>
       </section>
 
       <!-- Раздел с картой -->
