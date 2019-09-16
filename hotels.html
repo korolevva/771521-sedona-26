@@ -36,7 +36,6 @@
         <!-- Раздел с формой поиска отеля -->
         <section class="hotel-search-inner">
           <h2 class="visually-hidden">Форма поиска гостиницы</h2>
-            <div class="hotel-search-inner__background"></div>
             <form  class="form-inner">
               <!-- Группа чекбоксов Инфраструктура -->
               <fieldset class="form-inner__form-group">
@@ -87,21 +86,21 @@
                 </legend>
                 <div class="form-inner__range-filter">
                   <div class="form-inner__price-fields">
-                      <label class="form-inner__label visually-hidden">От 0
+                      <label class="form-inner__label">От
                         <input class="form-inner__input form-inner__input--text" type="text" name="price-min" value="0" placeholder="От 0">
                       </label>
-                      <label class="form-inner__label visually-hidden">До 3000
+                      <label class="form-inner__label">До
                         <input class="form-inner__input form-inner__input--text" type="text" name="price-max" value="3 000" placeholder="До 3000">
                       </label>
                   </div>
                   <div class="form-inner__range">
                     <div class="form-inner__range-bar"></div>
                     <div class="form-inner__range-bar form-inner__range-bar--fill"></div>
-                    <div class="form-inner__range-grip form-inner__range-grip--min">Минимальное значение цены</div>
-                    <div class="form-inner__range-grip form-inner__range-grip--max">Максимальное значение цены</div>
+                    <button class="form-inner__range-grip form-inner__range-grip--min" type="button">Минимальное значение цены</button>
+                    <button class="form-inner__range-grip form-inner__range-grip--max" type="button">Максимальное значение цены</button>
                   </div>
                 </div>
-                <button class="form-inner__button-show" type="button">Показать</button>
+                <button class="form-inner__button-show" type="submit">Показать</button>
               </fieldset>
             </form>
         </section>
