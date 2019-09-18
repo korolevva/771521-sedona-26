@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Сайт города Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
@@ -89,7 +92,7 @@
           Укажите предполагаемые даты поездки,
           и мы покажем вам лучшие предложения гостиниц в седоне
         </p>
-        <button class="hotel-search__button-popup" type="button">Поиск гостиницы в Седоне</button>
+        <button class="hotel-search__button hotel-search__button-popup" type="button">Поиск гостиницы в Седоне</button>
         <form class="hotel-search__popup-form" action="https://echo.htmlacademy.ru" method="post">
           <label class="hotel-search__field">
             <span class="hotel-search__field-name">Дата заезда</span>
@@ -113,7 +116,7 @@
               <input class="hotel-search__input" type="text" name="children" value="" placeholder="0">
               <span class="hotel-search__icon-minus"></span>
           </label>
-          <button class="hotel-search__button-search" type="submit">Найти</button>
+          <button class="hotel-search__button hotel-search__button-search" type="submit">Найти</button>
         </form>
       </section>
 
