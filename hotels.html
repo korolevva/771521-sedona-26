@@ -37,10 +37,74 @@
         <h1 class="visually-hidden">Поиск гостиницы</h1>
 
         <!-- Раздел с формой поиска отеля -->
-        <section class="hotel-search">
+        <section class="hotel-search-inner">
           <h2 class="visually-hidden">Форма поиска гостиницы</h2>
-            <form  class="hotel-search__form">
+            <form  class="form-inner">
+              <!-- Группа чекбоксов Инфраструктура -->
+              <fieldset class="form-inner__form-group">
+                <legend class="form-inner__form-title">
+                  Инфраструктура:
+                </legend>
+                <ul class="form-inner__list" role="none">
+                  <li class="form-inner__item">
+                    <input class="form-inner__input form-inner__input--checkbox visually-hidden" type="checkbox" name="infrastructure" value="pool" id="infrastructure-pool" checked>
+                    <label class="form-inner__label" for="infrastructure-pool">Бассейн</label>
+                  </li>
+                  <li class="form-inner__item">
+                      <input class="form-inner__input form-inner__input--checkbox visually-hidden" type="checkbox" name="infrastructure" value="parking" id="infrastructure-parking">
+                      <label class="form-inner__label" for="infrastructure-parking">Парковка</label>
+                  </li>
+                  <li class="form-inner__item">
+                      <input class="form-inner__input form-inner__input--checkbox visually-hidden" type="checkbox" name="infrastructure" value="wifi" id="infrastructure-wifi">
+                      <label class="form-inner__label" for="infrastructure-wifi">wi-fi</label>
+                  </li>
+                </ul>
+              </fieldset>
 
+              <!-- Группа чекбоксов Тип жилья -->
+              <fieldset class="form-inner__form-group">
+                <legend class="form-inner__form-title">
+                  Тип жилья:
+                </legend>
+                <ul class="form-inner__list" role="none">
+                  <li class="form-inner__item">
+                    <input class="form-inner__input form-inner__input--checkbox visually-hidden" type="checkbox" name="type-housing" value="hotel" id="type-hotel" checked>
+                    <label class="form-inner__label" for="type-hotel">Гостиница</label>
+                  </li>
+                  <li class="form-inner__item">
+                      <input class="form-inner__input form-inner__input--checkbox visually-hidden" type="checkbox" name="type-housing" value="motel" id="type-motel" checked>
+                      <label class="form-inner__label" for="type-motel">Мотель</label>
+                  </li>
+                  <li class="form-inner__item">
+                      <input class="form-inner__input form-inner__input--checkbox visually-hidden" type="checkbox" name="type-housing" value="apartments" id="type-apartments" checked>
+                      <label class="form-inner__label" for="type-apartments">Апартаменты</label>
+                  </li>
+                </ul>
+              </fieldset>
+
+              <!-- Выбор из диапазона -->
+              <fieldset class="form-inner__form-group">
+                <legend class="form-inner__form-title">
+                  Стоимость в сутки (Р):
+                </legend>
+                <div class="form-inner__range-filter">
+                  <div class="form-inner__price-fields">
+                      <label class="form-inner__label">От
+                        <input class="form-inner__input form-inner__input--text" type="text" name="price-min" value="0" placeholder="От 0">
+                      </label>
+                      <label class="form-inner__label">До
+                        <input class="form-inner__input form-inner__input--text" type="text" name="price-max" value="3 000" placeholder="До 3000">
+                      </label>
+                  </div>
+                  <div class="form-inner__range">
+                    <div class="form-inner__range-bar"></div>
+                    <div class="form-inner__range-bar form-inner__range-bar--fill"></div>
+                    <button class="form-inner__range-grip form-inner__range-grip--min" type="button">Минимальное значение цены</button>
+                    <button class="form-inner__range-grip form-inner__range-grip--max" type="button">Максимальное значение цены</button>
+                  </div>
+                </div>
+                <button class="form-inner__button-show" type="submit">Показать</button>
+              </fieldset>
             </form>
         </section>
 
