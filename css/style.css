@@ -69,11 +69,6 @@ a {
   list-style: none;
 }
 
-.features__item:nth-child(1),
-.features__item:nth-child(2) {
-  color: #ffffff;
-}
-
 .feature__title {
   font-size: 14px;
   line-height: 26px;
@@ -82,12 +77,18 @@ a {
 
 .features-item__title {
   font-size: 21px;
-  font-weight: 700px;
+  font-weight: 700;
 }
 
-.features__item:not(:nth-child(1)):not(:nth-child(2)) .features-item__item-number,
-.features__item:not(:nth-child(1)):not(:nth-child(2)) .features-item__description {
+.features-item__item-number,
+.features-item__description {
   color: #333333;
+}
+
+.features-item__title--text-white,
+.features-item__item-number--text-white,
+.features-item__description--text-white {
+  color: #ffffff;
 }
 
 .city-attractions {
