@@ -38,6 +38,7 @@ a {
 
 .navigation-header__link {
   color: #000000;
+  font-weight: 700;
 }
 
 .navigation-header__link:hover,
@@ -69,7 +70,7 @@ a {
   list-style: none;
 }
 
-.feature__title {
+.features__title {
   font-size: 14px;
   line-height: 26px;
   color: #333333;
@@ -145,6 +146,7 @@ a {
 
 .hotel-search__field-name {
   line-height: 26px;
+  font-weight: 700;
 }
 
 .hotel-search__input {
