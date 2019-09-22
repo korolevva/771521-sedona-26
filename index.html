@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Сайт города Седона</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body>
 
+<head>
+  <meta charset="utf-8">
+  <title>Сайт города Седона</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
     <!-- Шапка сайта -->
     <header class="header">
       <img class="header__logo" src="img/logo-sedona.svg" width="140" height="70" alt="Лого сайта Седона">
@@ -18,13 +20,13 @@
             <a class="navigation-header__link" href="info.html">Информация</a>
           </li>
           <li class="navigation-header__item">
-              <a class="navigation-header__link" href="media.html">Фото и видео</a>
+            <a class="navigation-header__link" href="media.html">Фото и видео</a>
           </li>
           <li class="navigation-header__item">
-              <a class="navigation-header__link" href="maps.html">Карта штата</a>
+            <a class="navigation-header__link" href="maps.html">Карта штата</a>
           </li>
           <li class="navigation-header__item">
-              <a class="navigation-header__link" href="hotels.html">Гостиницы</a>
+            <a class="navigation-header__link" href="hotels.html">Гостиницы</a>
           </li>
         </ul>
       </nav>
@@ -34,7 +36,7 @@
     <main class="main">
       <div class="welcome-banner"></div>
       <h1 class="main__title">Седона — небольшой городок в Аризоне,
-          заслуживающий большего!
+        заслуживающий большего!
       </h1>
 
       <!-- Раздел преимуществ -->
@@ -43,43 +45,49 @@
         <p class="features__title">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         <ul class="features__list">
           <li class="features__item features-item item-image">
-            <h3 class="features-item__title features-item__title--text-white">Настоящий городок</h3>
-            <p class="features-item__item-number features-item__item-number--text-white">№1</p>
-            <p class="features-item__description features-item__description--text-white">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <div class="features__wrapper">
+              <h3 class="features-item__title features-item__title--text-white">Настоящий городок</h3>
+              <p class="features-item__item-number features-item__item-number--text-white">№1</p>
+              <p class="features-item__description features-item__description--text-white">Седона — не аттракцион для
+                туристов, там течёт своя жизнь</p>
+            </div>
             <ul class="city-attractions">
-                <li class="city-attractions__item">
-                  <h4 class="city-attractions__title">Жильё</h4>
-                  <p class="city-attractions__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-                </li>
-                <li class="city-attractions__item">
-                    <h4 class="city-attractions__title">Еда</h4>
-                    <p class="city-attractions__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-                </li>
-                <li class="city-attractions__item">
-                    <h4 class="city-attractions__title">Сувениры</h4>
-                    <p class="city-attractions__description">Не только китайского, но и местного производства!</p>
-                </li>
+              <li class="city-attractions__item">
+                <h4 class="city-attractions__title">Жильё</h4>
+                <p class="city-attractions__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              </li>
+              <li class="city-attractions__item">
+                <h4 class="city-attractions__title">Еда</h4>
+                <p class="city-attractions__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              </li>
+              <li class="city-attractions__item">
+                <h4 class="city-attractions__title">Сувениры</h4>
+                <p class="city-attractions__description">Не только китайского, но и местного производства!</p>
+              </li>
             </ul>
           </li>
           <li class="features__item features-item item-image">
+            <div class="features__wrapper">
               <h3 class="features-item__title features-item__title--text-white">Там есть Мост дьявола</h3>
               <p class="features-item__item-number features-item__item-number--text-white">№2</p>
-              <p class="features-item__description features-item__description--text-white">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+              <p class="features-item__description features-item__description--text-white">Да, по нему можно пройти! Если
+                конечно вы осмелитесь</p>
+            </div>
           </li>
           <li class="features__item features-item">
-              <h3 class="features-item__title">Небольшая площадь</h3>
-              <p class="features-item__item-number">№3</p>
-              <p class="features-item__description">Все достопримечательности находятся очень близко</p>
+            <h3 class="features-item__title">Небольшая площадь</h3>
+            <p class="features-item__item-number">№3</p>
+            <p class="features-item__description">Все достопримечательности находятся очень близко</p>
           </li>
           <li class="features__item features-item">
-              <h3 class="features-item__title">Красивая дорога</h3>
-              <p class="features-item__item-number">№4</p>
-              <p class="features-item__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <h3 class="features-item__title">Красивая дорога</h3>
+            <p class="features-item__item-number">№4</p>
+            <p class="features-item__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
           <li class="features__item features-item">
-              <h3 class="features-item__title">Мало туристов</h3>
-              <p class="features-item__item-number">№5</p>
-              <p class="features-item__description">Большинство едет в гранд каньон и толпится там</p>
+            <h3 class="features-item__title">Мало туристов</h3>
+            <p class="features-item__item-number">№5</p>
+            <p class="features-item__description">Большинство едет в гранд каньон и толпится там</p>
           </li>
         </ul>
       </section>
@@ -87,37 +95,41 @@
       <!-- Раздел по поиску отеля -->
       <section class="hotel-search">
         <h2 class="visually-hidden">Поиск гостиницы в седоне</h2>
-        <p class="hotel-search__question">Заинтересовались?</p>
-        <p class="hotel-search__description">
-          Укажите предполагаемые даты поездки,
-          и мы покажем вам лучшие предложения гостиниц в седоне
-        </p>
-        <button class="hotel-search__button hotel-search__button-popup" type="button">Поиск гостиницы в Седоне</button>
-        <form class="hotel-search__popup-form" action="https://echo.htmlacademy.ru" method="post">
-          <label class="hotel-search__field">
-            <span class="hotel-search__field-name">Дата заезда</span>
-            <input class="hotel-search__input" type="text" name="arrival-date" value="" placeholder="24 апреля 2017">
-            <button class="hotel-search__icon-date" type="button">Выбор даты заезда</button>
-          </label>
-          <label class="hotel-search__field">
-            <span class="hotel-search__field-name">Дата выезда</span>
-            <input class="hotel-search__input" type="text" name="departure-date" value="" placeholder="4 июля 2017">
-            <button class="hotel-search__icon-date" type="button">Выбор даты выезда</button>
-          </label>
-          <label class="hotel-search__field">
-            <span class="hotel-search__field-name">Взрослые</span>
-            <button class="hotel-search__icon-plus" type="button">Увеличение количества взрослых</button>
-            <input class="hotel-search__input" type="text" name="adults" value="" placeholder="2">
-            <button class="hotel-search__icon-minus" type="button">Уменьшение количества взрослых</button>
-          </label>
-          <label class="hotel-search__field">
-            <span class="hotel-search__field-name">Дети</span>
-            <button class="hotel-search__icon-plus" type="button">Увеличение количества детей</button>
-            <input class="hotel-search__input" type="text" name="children" value="" placeholder="0">
-            <button class="hotel-search__icon-minus" type="button">Уменьшение количества детей</button>
-          </label>
-          <button class="hotel-search__button hotel-search__button-search" type="submit">Найти</button>
-        </form>
+        <div class="hotel-search__wrapper-text">
+          <p class="hotel-search__question">Заинтересовались?</p>
+          <p class="hotel-search__description">
+            Укажите предполагаемые даты поездки,
+            и мы покажем вам лучшие предложения гостиниц в седоне
+          </p>
+        </div>
+        <div class="hotel-search__wrapper-form">
+          <button class="hotel-search__button hotel-search__button-popup" type="button">Поиск гостиницы в Седоне</button>
+          <form class="hotel-search__popup-form" action="https://echo.htmlacademy.ru" method="post">
+            <label class="hotel-search__field">
+              <span class="hotel-search__field-name">Дата заезда</span>
+              <input class="hotel-search__input" type="text" name="arrival-date" value="" placeholder="24 апреля 2017">
+              <button class="hotel-search__icon-date" type="button">Выбор даты заезда</button>
+            </label>
+            <label class="hotel-search__field">
+              <span class="hotel-search__field-name">Дата выезда</span>
+              <input class="hotel-search__input" type="text" name="departure-date" value="" placeholder="4 июля 2017">
+              <button class="hotel-search__icon-date" type="button">Выбор даты выезда</button>
+            </label>
+            <label class="hotel-search__field">
+              <span class="hotel-search__field-name">Взрослые</span>
+              <button class="hotel-search__icon-plus" type="button">Увеличение количества взрослых</button>
+              <input class="hotel-search__input" type="text" name="adults" value="" placeholder="2">
+              <button class="hotel-search__icon-minus" type="button">Уменьшение количества взрослых</button>
+            </label>
+            <label class="hotel-search__field">
+              <span class="hotel-search__field-name">Дети</span>
+              <button class="hotel-search__icon-plus" type="button">Увеличение количества детей</button>
+              <input class="hotel-search__input" type="text" name="children" value="" placeholder="0">
+              <button class="hotel-search__icon-minus" type="button">Уменьшение количества детей</button>
+            </label>
+            <button class="hotel-search__button hotel-search__button-search" type="submit">Найти</button>
+          </form>
+        </div>
       </section>
 
       <!-- Раздел с картой -->
@@ -138,18 +150,23 @@
           <a href="#" class="footer__socials-link footer__socials-link--twitter">Наша группа в Twitter</a>
         </li>
         <li class="footer__socials-item">
-            <a href="#" class="footer__socials-link footer__socials-link--facebook">Наша группа в Facebook</a>
+          <a href="#" class="footer__socials-link footer__socials-link--facebook">Наша группа в Facebook</a>
         </li>
         <li class="footer__socials-item">
-            <a href="#" class="footer__socials-link footer__socials-link--youtube">Наша группа в Youtube</a>
+          <a href="#" class="footer__socials-link footer__socials-link--youtube">Наша группа в Youtube</a>
         </li>
       </ul>
-      <p class="footer__developer-name">Website by</p>
-      <span class="footer__logo">
-        <a class="footer__developer-link" href="https://htmlacademy.ru/intensive/htmlcss" >
-          <img class="footer__developer-image" src="img/logo-htmlacademy.svg" width="115" height="41" alt="htmlacademy.ru">
-        </a>
-      </span>
+      <div class="footer__wrapper-developer">
+        <p class="footer__developer-name">Website by</p>
+        <span class="footer__logo">
+          <a class="footer__developer-link" href="https://htmlacademy.ru/intensive/htmlcss">
+            <img class="footer__developer-image" src="img/logo-htmlacademy.svg" width="115" height="41"
+              alt="htmlacademy.ru">
+          </a>
+        </span>
+      </div>
     </footer>
-  </body>
+  </div>
+</body>
+
 </html>
