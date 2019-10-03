@@ -783,6 +783,7 @@ input[type="radio"].visually-hidden {
 
   color: inherit;
   font: inherit;
+  line-height: 1.15;
   text-align: left;
 
   background: none;
@@ -823,8 +824,8 @@ input[type="radio"].visually-hidden {
   content: "";
 
   position: absolute;
-  top: center;
-  left: center;
+  top: 50%;
+  left: 50%;
 
   width: 4px;
   height: 4px;
@@ -839,7 +840,7 @@ input[type="radio"].visually-hidden {
   left: 0;
 }
 
-.form-inner__range-grip--min {
+.form-inner__range-grip--max {
   left: 80%;
 }
 
