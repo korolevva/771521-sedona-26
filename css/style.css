@@ -407,7 +407,7 @@ input[type="radio"].visually-hidden {
   background-color: #503e33;
 }
 
-.wrapper-mask {
+.hotel-search__wrapper-mask {
   position: absolute;
   top: 86px;
 
@@ -415,6 +415,10 @@ input[type="radio"].visually-hidden {
   min-height: 415px;
 
   overflow: hidden;
+}
+
+.hotel-search__wrapper-mask--hidden {
+  display: none;
 }
 
 .hotel-search__popup-form {
