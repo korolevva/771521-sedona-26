@@ -37,7 +37,9 @@ input[type="radio"].visually-hidden {
 
   white-space: nowrap;
 
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -65,9 +67,14 @@ input[type="radio"].visually-hidden {
 }
 
 .navigation-header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 
   margin: 0;
   padding:0;
@@ -97,7 +104,6 @@ input[type="radio"].visually-hidden {
   line-height: 26px;
   font-weight: 700;
   color: #000000;
-
 }
 
 .navigation-header__link:hover,
@@ -116,9 +122,8 @@ input[type="radio"].visually-hidden {
 /* Стили index.html */
 
 .welcome-banner {
-  margin-bottom: 60px;
-
   height: 509px;
+  margin-bottom: 60px;
 
   background-image:
     url("../img/intro-mask.svg"),
@@ -151,16 +156,24 @@ input[type="radio"].visually-hidden {
 }
 
 .features__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  list-style: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+
   margin: 0;
   padding: 0;
+
+  list-style: none;
 }
 
 .features__item {
-  flex-basis: 400px;
-  flex-grow: 1;
+  -ms-flex-preferred-size: 400px;
+      flex-basis: 400px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 
   padding-top: 47px;
 }
@@ -191,7 +204,8 @@ input[type="radio"].visually-hidden {
 
 .features__item--image-right,
 .features__item--image-left {
-  flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
 
   background-color: #81b3d2;
 }
@@ -258,8 +272,11 @@ input[type="radio"].visually-hidden {
 }
 
 .city-attractions {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 
   margin: 0;
   padding: 0;
@@ -273,7 +290,9 @@ input[type="radio"].visually-hidden {
 .city-attractions__item {
   position: relative;
 
-  flex-basis: 400px;
+  -ms-flex-preferred-size: 400px;
+
+      flex-basis: 400px;
   padding-top: 161px;
 }
 
@@ -338,9 +357,16 @@ input[type="radio"].visually-hidden {
 }
 
 .hotel-search__wrapper-text{
+  display:-webkit-box;
+  display:-ms-flexbox;
   display:flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 
   width: 435px;
   margin: 0 auto;
@@ -370,6 +396,7 @@ input[type="radio"].visually-hidden {
 
 .hotel-search__wrapper-form {
   position: relative;
+
   width: 600px;
   margin: 0 auto;
 }
@@ -427,13 +454,17 @@ input[type="radio"].visually-hidden {
   left: 16px;
 
   display: none;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 
   width: 568px;
   padding-left: 55px;
   padding-top: 55px;
   padding-right: 55px;
   padding-bottom: 55px;
+
   background-color: #ffffff;
   box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
 }
@@ -473,16 +504,30 @@ input[type="radio"].visually-hidden {
 .hotel-search__wrapper-field {
   position: relative;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 30px;
 }
 
 .hotel-search__wrapper-people-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .hotel-search__field-name {
@@ -492,7 +537,8 @@ input[type="radio"].visually-hidden {
 
 .hotel-search__field-name--adults,
 .hotel-search__field-name--children {
-  align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .hotel-search__field-name--adults {
@@ -560,6 +606,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 8px;
   right: 4px;
+
   border: 0;
   background-color: transparent;
   cursor: pointer;
@@ -610,11 +657,11 @@ input[type="radio"].visually-hidden {
   height: 3px;
 
   background-color: #a9a9a9;
-
 }
 
 .hotel-search__icon-plus::after {
- transform: rotate(90deg);
+ -webkit-transform: rotate(90deg);
+         transform: rotate(90deg);
 }
 
 .hotel-search__icon-minus:hover::before,
@@ -659,13 +706,12 @@ input[type="radio"].visually-hidden {
 
 .map {
   height: 590px;
+
   background-image: url("../img/map.jpg");
   background-position: 50% 0;
   background-repeat: no-repeat;
   background-size: 1200px 593px;
 }
-
-
 
 /* --------- Стили hotels.html ---------- */
 
@@ -683,6 +729,8 @@ input[type="radio"].visually-hidden {
 }
 
 .form-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 
   margin: 0;
@@ -717,9 +765,10 @@ input[type="radio"].visually-hidden {
 .sorting__list,
 .sorting__direction-list,
 .catalog__list {
-  list-style: none;
   margin: 0;
   padding: 0;
+
+  list-style: none;
 }
 
 .form-inner__list {
@@ -736,6 +785,7 @@ input[type="radio"].visually-hidden {
 
 .form-inner__form-title {
   margin-bottom: 26px;
+
   font-size: 16px;
   font-weight: 700;
   color: #ffffff;
@@ -786,6 +836,8 @@ input[type="radio"].visually-hidden {
 }
 
 .form-inner__price-fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
 
@@ -807,13 +859,18 @@ input[type="radio"].visually-hidden {
 
   background: #ffffff;
 
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+
+          transform: translate(-50%, -50%);
 }
 
 .form-inner__price-fields .form-inner__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 
   width: 147px;
   padding-left: 65px;
@@ -845,7 +902,6 @@ input[type="radio"].visually-hidden {
 }
 
 .form-inner__range-bar {
-
   height: 2px;
 
   background: rgba(255, 255, 255, 0.3);
@@ -853,17 +909,20 @@ input[type="radio"].visually-hidden {
 
 .form-inner__range-bar--fill {
   width: 80%;
+
   background-color: #ffffff;
 }
 
 .form-inner__range-grip{
   position: absolute;
   top: -9px;
+
   display: block;
-  border: none;
   width: 20px;
   height: 20px;
+
   background-color: #ffffff;
+  border: none;
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
@@ -898,15 +957,16 @@ input[type="radio"].visually-hidden {
     position: absolute;
     top: -9px;
     display: block;
-    border: none;
+
     width: 22px;
     height: 22px;
+
     background-color: #ffffff;
+    border: none;
     border-radius: 50%;
     box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
     cursor: pointer;
   }
-
 
 .form-inner__button-show {
   display: block;
@@ -933,15 +993,16 @@ input[type="radio"].visually-hidden {
 }
 
 .sorting {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 31px;
   padding-bottom: 30px;
   padding-right: 63px;
   padding-left: 71px;
-
-  align-items: center;
-
 
   border-bottom: 1px solid #f6f6f6;
 }
@@ -962,8 +1023,11 @@ input[type="radio"].visually-hidden {
 
 .sorting__list,
 .sorting__direction-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .sorting__list {
@@ -1077,14 +1141,16 @@ input[type="radio"].visually-hidden {
   padding-left: 72px;
 }
 
-
-
 .catalog__item {
   position: relative;
 
-  display: flex;
-  flex-wrap: wrap;
+  display: -webkit-box;
 
+  display: -ms-flexbox;
+
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 24px;
   padding-bottom: 31px;
 }
@@ -1102,7 +1168,6 @@ input[type="radio"].visually-hidden {
 
   width: 1200px;
   height: 1px;
-
 
   background-color: #f6f6f6;
 }
@@ -1134,6 +1199,8 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: 15px;
 }
@@ -1163,11 +1230,11 @@ input[type="radio"].visually-hidden {
   margin-right: 2px;
   padding-top: 3px;
   padding-bottom: 3px;
-  vertical-align: middle;
 
   color: #ffffff;
   font-weight: 700;
   text-align: center;
+  vertical-align: middle;
 }
 
 .catalog__button--more-details {
@@ -1211,9 +1278,12 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog__stars-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
-
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   margin-bottom: 46px;
   padding-top: 5px;
 
@@ -1237,7 +1307,6 @@ input[type="radio"].visually-hidden {
   height: 17px;
   background-image: url("../img/star.svg");
   background-size: 18px 17px;
-
 }
 
 .catalog__raiting-numbers {
@@ -1250,6 +1319,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
   padding-top: 3px;
   padding-left: 4px;
+
   background-color: #f2f2f2;
 
   color: #666666;
@@ -1259,8 +1329,12 @@ input[type="radio"].visually-hidden {
 /* Стили Footer */
 
 .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 
   margin-top: -117px;
 
@@ -1269,13 +1343,19 @@ input[type="radio"].visually-hidden {
 }
 
 .footer__hashtag {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 
   width: 400px;
   padding-top: 45px;
   padding-bottom: 48px;
+
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
@@ -1284,10 +1364,14 @@ input[type="radio"].visually-hidden {
 }
 
 .footer__socials-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 400px;
   margin: 0;
   padding: 0;
@@ -1307,13 +1391,20 @@ input[type="radio"].visually-hidden {
 }
 
 .footer__socials-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 46px;
   height: 48px;
+
   background-color: #81b3d2;
 }
 
@@ -1331,10 +1422,17 @@ input[type="radio"].visually-hidden {
 }
 
 .footer__wrapper-developer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 
   width: 400px;
   padding-top: 33px;
@@ -1350,10 +1448,9 @@ input[type="radio"].visually-hidden {
   vertical-align: middle;
 
   line-height: 26px;
-
 }
 
-.footer__developer-link path  {
+.footer__developer-link path {
   fill: #231f20;
 }
 
@@ -1362,13 +1459,13 @@ input[type="radio"].visually-hidden {
   fill: #81b3d2;
 }
 
-.footer__developer-link:active path  {
+.footer__developer-link:active path {
   fill: #bdbbbc;
 }
 
 .footer__logo {
   display: inline-block;
-
   margin-top: 5px;
+
   vertical-align: middle;
 }
