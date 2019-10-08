@@ -64,6 +64,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 0;
   left: 529px;
+  z-index: 1;
 }
 
 .navigation-header__list {
@@ -122,26 +123,31 @@ input[type="radio"].visually-hidden {
 /* Стили index.html */
 
 .welcome-banner {
+  position: relative;
+
   height: 509px;
   margin-bottom: 60px;
 
   background-image:
     url("../img/intro-mask.svg"),
-    url("../img/intro-welcome.svg"),
     url("../img/mountain.jpg");
 
   background-position:
     left 0 bottom -2px,
-    center 75px,
     0 -56px;
 
   background-size:
     1200px 60px,
-    459px 353px,
     1200px 773px;
 
   background-repeat: no-repeat;
   background-color: #283739;
+}
+
+.welcome-banner__text-image {
+  position: absolute;
+  top: 75px;
+  left: 371px;
 }
 
 .main__title {
@@ -230,8 +236,11 @@ input[type="radio"].visually-hidden {
 }
 
 .features-item__title {
+  width: 160px;
   margin: 0;
+  margin-right: auto;
   margin-bottom: 24px;
+  margin-left: auto;
   padding: 0;
 
   font-size: 21px;
@@ -254,9 +263,14 @@ input[type="radio"].visually-hidden {
 }
 
 .features-item__description {
+  width: 280px;
   margin: 0;
+  margin-right: auto;
+  margin-left: auto;
   margin-bottom: 59px;
+  margin-left: auto;
   padding: 0;
+  outline: 1px solid red;
 }
 
 .features-item__item-number,
@@ -269,6 +283,10 @@ input[type="radio"].visually-hidden {
 .features-item__item-number--text-white,
 .features-item__description--text-white {
   color: #ffffff;
+}
+
+.features-item__description--text-white {
+  width: 305px;
 }
 
 .city-attractions {
@@ -350,13 +368,16 @@ input[type="radio"].visually-hidden {
 }
 
 .city-attractions__description {
+  width: 300px;
+  margin-right: auto;
   margin-bottom: 81px;
+  margin-left: auto;
 
   color: #333333;
   text-align: center;
 }
 
-.hotel-search__wrapper-text{
+.hotel-search__wrapper-text {
   display:-webkit-box;
   display:-ms-flexbox;
   display:flex;
@@ -711,6 +732,7 @@ input[type="radio"].visually-hidden {
   background-position: 50% 0;
   background-repeat: no-repeat;
   background-size: 1200px 593px;
+  background-color: #e0edbb;
 }
 
 /* --------- Стили hotels.html ---------- */
@@ -913,7 +935,7 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
 }
 
-.form-inner__range-grip{
+.form-inner__range-grip {
   position: absolute;
   top: -9px;
 
@@ -986,7 +1008,7 @@ input[type="radio"].visually-hidden {
 
 .form-inner__button-show:hover,
 .form-inner__button-show:active,
-.form-inner__button-show:focus{
+.form-inner__button-show:focus {
   color: #000000;
   background-color: #ffffff;
   border: 2px solid #ffffff;
@@ -1155,7 +1177,7 @@ input[type="radio"].visually-hidden {
   padding-bottom: 31px;
 }
 
-.catalog__item:last-child{
+.catalog__item:last-child {
   margin-bottom: 27px;
 }
 
@@ -1274,7 +1296,34 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog__raiting-stars {
-  background-color: #81b3d2;
+  height: 17px;
+  margin-top: 4px;
+  margin-bottom: 46px;
+  margin-left: auto;
+
+  background-image: url(../img/star.svg);
+  background-repeat: space;
+  background-size: 18px 17px;
+}
+
+.catalog__raiting-stars--one-star {
+  width: 17px;
+}
+
+.catalog__raiting-stars--two-stars {
+  width: 40px;
+}
+
+.catalog__raiting-stars--three-stars {
+  width: 64px;
+}
+
+.catalog__raiting-stars--four-stars {
+  width: 88px;
+}
+
+.catalog__raiting-stars--five-stars {
+  width: 112px;
 }
 
 .catalog__stars-list {
